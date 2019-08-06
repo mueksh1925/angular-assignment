@@ -1,0 +1,45 @@
+
+<div class="header">
+  <h1>Assignment</h1>
+</div>
+<div class="container">
+  <div>
+    <h5>What is this and let</h5>
+    let is block level element.when same name declare the inside app then you will get error.
+  
+    this is refer the current object. when you declare the same name global variable and local varible and if you want retrieve the local varible then use this keyword.
+  </div>
+  <h5>1.Accept an array of string and count to charecter with including space and special charecter</h5>
+  <input type="text" placeholder="pls push using the array of string  button" [(ngModel)]="arrString" class="form-input"/>
+  <button class="primary" (click)="acceptOfString()">Accept string of Array</button>
+  <h6>Output:{{countMap | json}}</h6>
+
+  <h5>2. Return all the keys present in an object at any level</h5>
+  <h6>Object level:{{node | json}}</h6>
+  <h6>Ans:Output:-{{ObjectKeyLevel}}</h6>
+
+<div>
+  <h5>3. Reverse every word of string</h5>
+  <input type="text" [(ngModel)]="wordString" placeholder=" enter the word of string" (change)="reverseStringOfWordSplit()">
+  <div>
+    Before string={{wordString}}
+    <hr>
+  </div>
+  <div>
+   <b> After Reverse and split using output:=</b> {{reverseStringOfWordSplit()}}
+  </div>
+</div>
+
+<div>
+  <h5>4. Remove duplicate strings from an array   of string</h5>
+  <div>
+    <b>Before output={{arrayOfString}}</b>
+
+   <hr>
+  </div>
+  <div><b>After output:</b>
+    {{removeDuplicateStringArray()}}
+  </div>
+</div>
+
+<div>
